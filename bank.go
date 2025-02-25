@@ -38,7 +38,7 @@ func main() {
 		fmt.Scan(&withdrawAmount)
 		accountBalance -= withdrawAmount
 		fmt.Println("Account balance has been updated!\nYour new balance is:", accountBalance)
-	} else if choice == 4 {
+	} else {
 		fmt.Println("Thank you for using Go Bank!")
 	}
 }
