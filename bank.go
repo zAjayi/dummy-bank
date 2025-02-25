@@ -32,6 +32,13 @@ func main() {
 		fmt.Scan(&depositAmount)
 		accountBalance += depositAmount
 		fmt.Println("Account balance has been updated!\nYour new balance is:", accountBalance)
+	} else if choice == 3 {
+		fmt.Print("Enter amount to withdraw: ")
+		var withdrawAmount float64
+		fmt.Scan(&withdrawAmount)
+		accountBalance -= withdrawAmount
+		fmt.Println("Account balance has been updated!\nYour new balance is:", accountBalance)
+	} else if choice == 4 {
+		fmt.Println("Thank you for using Go Bank!")
 	}
-	fmt.Println("Your choice is ", choice)
 }
