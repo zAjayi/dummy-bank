@@ -5,8 +5,8 @@ import "fmt"
 func main() {
 	var accountBalance float64 = 1000
 
-
-	fmt.Println("Welcom to Go Bank.")
+	for i := 0; i < 2; i++ {
+		fmt.Println("Welcom to Go Bank.")
 	fmt.Println("What would you like to do?")
 	fmt.Println("1. Check balance")
 	fmt.Println("2. Deposit money")
@@ -56,7 +56,10 @@ func main() {
 		}
 		accountBalance -= withdrawAmount
 		fmt.Println("Account balance has been updated!\nYour new balance is:", accountBalance)
+		return
 	} else {
 		fmt.Println("Thank you for using Go Bank!")
+		return
 	}
+}
 }
